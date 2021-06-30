@@ -3,10 +3,12 @@
 Github Repository for our paper on the global diversity and richness of Armillaria species
 by Rachel Koch and Josh Herr
 
-As of June 15th, 2021, this work is in review.
+This work is [deposited to bioRxiv](https://www.biorxiv.org/content/10.1101/2021.04.30.442184v1).
+
+This work is in review at [Frontiers in Microbiology](https://www.frontiersin.org/journals/microbiology/sections/microbe-and-virus-interactions-with-plants) under the research topic of [soil fungal biodiversity for plant and soil health](https://www.frontiersin.org/research-topics/18984/soil-fungal-biodiversity-for-plant-and-soil-health-volume-ii)
 
 To cite this work or code:
-Koch RA and JR Herr. Enter citation and DOI here.
+Koch RA and JR Herr. To be updated upon acceptance for publication.
 
 __ABSTRACT__
 Armillaria is a globally distributed fungal genus most notably recognized as economically important plant pathogens that are found predominantly in forest and agronomic systems.  Armillaria has more recently received attention for ecologically diverse roles as woody plant decomposers and as mycorrhizal symbionts with specific plants. Previous phylogenetic analyses suggest that around 50 species are recognized globally. Despite this previous work, no studies have analyzed the global species richness and distribution of the genus using data derived from fungal community sequencing datasets. In order to assess the global diversity and species richness of Armillaria, we mined publicly available sequencing datasets derived from numerous primer pairs for the ribosomal operon. Our estimates reveal that species richness may be substantially greater, at 89 species, than was previously noted. Eastern Asia represents the biogeographic region with the highest species richness. We also assess the overlap of species across geographic regions and propose some hypotheses regarding the drivers of variability in species diversity and richness between different biogeographic regions.
