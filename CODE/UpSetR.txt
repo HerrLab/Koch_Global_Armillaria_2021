@@ -1,0 +1,8 @@
+###To make the UpSetR plots (Fig. 2), the following R code was used. The colors of the bars and interaction plots were changed in InkScape.
+
+library(UpSetR)
+setwd("~/Desktop")
+armillaria_its1 <- read.table("ITS1_distribution_upsetrplot.csv", header = T, row.names = 1, check.names = F, sep = ",")
+upset(armillaria_its1, nsets = 20, order.by = "freq")
+armillaria_its2 <- read.table("ITS2_distribution_upsetrplot.csv", header = T, row.names = 1, check.names = F, sep = ",")
+upset(armillaria_its2, nsets = 20, order.by = "freq")
