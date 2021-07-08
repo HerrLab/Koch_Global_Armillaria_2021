@@ -3,7 +3,7 @@
 Github Repository for our paper on the global diversity and richness of Armillaria species
 by Rachel Koch and Josh Herr
 
-This work is [deposited to bioRxiv](https://www.biorxiv.org/content/10.1101/2021.04.30.442184v1).
+This work is [deposited to bioRxiv](https://www.biorxiv.org/content/10.1101/2021.06.29.450419v1).
 
 This work is in review at [Frontiers in Microbiology](https://www.frontiersin.org/journals/microbiology/sections/microbe-and-virus-interactions-with-plants) under the research topic of [soil fungal biodiversity for plant and soil health](https://www.frontiersin.org/research-topics/18984/soil-fungal-biodiversity-for-plant-and-soil-health-volume-ii)
 
