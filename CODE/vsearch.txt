@@ -1,0 +1,17 @@
+#####Dereplicate
+vsearch --derep_fulllength ITS1_QC.fas --sizeout --relabel Uniq --output derep_filter_ITS1.fasta
+
+#####Cluster
+vsearch --cluster_fast derep_filter_ITS1.fasta --id 0.98 --centroids ITS1_centroids.fas --uc ITS1_clusters.uc
+
+#####Generate OTU table
+vsearch -usearch_global ITS1_QC.fas --db ITS1_centroids.fas --id 0.99 --otutabout ITS1_counts.txt
+
+#####Dereplicate
+vsearch --derep_fulllength ITS2_QC.fas --sizeout --relabel Uniq --output derep_filter_ITS2.fasta
+
+#####Cluster
+vsearch --cluster_fast derep_filter_ITS2.fasta --id 0.98 --centroids ITS2_centroids.fas --uc ITS2_clusters.uc
+
+#####Generate OTU table
+vsearch -usearch_global ITS2_QC.fas --db ITS2_centroids.fas --id 0.99 --otutabout ITS2_counts.txt
