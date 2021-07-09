@@ -1,0 +1,2 @@
+module load ITSx
+ITSx -i Armillaria_Genbank.fasta --preserve T --cpu 2 -t f --save_regions all -o Armillaria_ITSx
