@@ -1,0 +1,21 @@
+Welcome to the Armillaria code and figure file! Below, we outline which files were used for which figures, tables and/or steps in the analysis!
+
+First, we pulled down all of the armillarioid ITS sequences from Genbank. This can be found in Koch_Global_Armillaria_2021/DATA/SEQUENCE_DATA/ and is called: "Armillaria_Genbank.fasta" 
+
+We used that fasta file as input for ITSx to extract the ITS1 and ITS2 regions from each sequence. The command we used for that is available at Koch_Global_Armillaria_2021/CODE/ under "ITSx.txt". 
+
+We manually removed sequences that were not full length so as to not bias results, and added the SRA data as well. After that quality control, the resulting fasta files are available in Koch_Global_Armillaria_2021/DATA/SEQUENCE_DATA/ and are called: "ITS1_QC.fas" and "ITS2_QC.fas".
+
+Those resulting fasta file was then used in VSEARCH to cluster both ITS1 and ITS2 (separately) at 98% nucleotide identity. The slurm script for VSEARCH is available at Koch_Global_Armillaria_2021/CODE/ and is labeled as "VSEARCH.txt". 
+The output from VSEARCH was then amended with location data to generate the primary tables and species clusters assignments from which all data are located, which are located in Koch_Global_Armillaria_2021/DATA/TABULAR_DATA/ and are called:  "TableS1_ITS1_SC_distribution.csv" and "TableS2_ITS2_SC_distribution.csv".
+
+Figure 1 was made manually in Inkscape. The data that support this figure are available in "ITS1_biogeography_matrix.csv" and "ITS2_biogeography_matrix.csv", which show the number of armillarioid species clusters that are shared between each biogeographic region, and indicate how thick the connecting line was drawn. 
+The total number of species in each region was extrapolated from "TableS1_ITS1_SC_distribution.csv" and "TableS2_ITS2_SC_distribution.csv", which has the biogeographic origin for each sequence. All of these files are located in Koch_Global_Armillaria_2021/DATA/TABULAR_DATA/.
+
+For Figure 2, we used the R package "UpSetR". That code is in the code folder in a file called "UpSetR.txt". The input files are located in Koch_Global_Armillaria_2021/DATA/TABULAR_DATA/ and are called "ITS1_distribution_upsetrplot.csv" and "ITS2_distribution_upsetrplot.csv".
+
+For Figure 3, we generated an ITS phylogeny using RAxML. The alignment we used as input for the phylogeny is composed of a representative sequence from each species cluster. The code for running RAxML is in Koch_Global_Armillaria_2021/CODE/ and is called "RAxML.txt".
+The alignment files (done using Mafft) are in Koch_Global_Armillaria_2021/DATA/SEQUENCE_DATA/ and are called "Armillaria_ITS1_fortree.fas" and "Armillaria_ITS2_fortree.fas", along with the tree file output from RAxML. These output files are labeled as: "RAxML_bipartitions.ArmITS1" and "RAxML_bipartitions.ArmITS2". 
+The circles on the figure represent the number of sequences for each species cluster from each biogeographic region, and those data are in Koch_Global_Armillaria_2021/DATA/TABULAR_DATA/ and are called "ITS1_SeqPerSC.csv" and "ITS2_SeqPerSC.csv".
+
+For Table 1, "Armillaria_symbionts.csv" is in Koch_Global_Armillaria_2021/DATA/TABULAR_DATA/, and includes all of the accession numbers which had corresponding metadata that indicated the sequences were derived from tissue in symbiotic associations with other organisms.
