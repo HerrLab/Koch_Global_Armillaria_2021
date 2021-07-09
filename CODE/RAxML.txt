@@ -1,1 +1,2 @@
 raxmlHPC-PTHREADS-SSE3 -T 3 -f a -m GTRGAMMA -p 12345 -s Armillaria_ITS1_fortree.fas -x 12345 -n Armillaria_ITS1 -N 1000
+raxmlHPC-PTHREADS-SSE3 -T 3 -f a -m GTRGAMMA -p 12345 -s Armillaria_ITS2_fortree.fas -x 12345 -n Armillaria_ITS2 -N 1000
